@@ -1,10 +1,9 @@
 import React from "react";
-import './SelectedPlayer.css'
+import "./SelectedPlayer.css";
 import SpecialPlayer from "../SpecialPlayer/SpecialPlayer";
 
 const TeamPlayer = (props) => {
   const player = props.teamPlayer;
-  console.log(props);
   let total = player.reduce((total, player) => total + player.salary, 0);
   return (
     <div>
@@ -13,7 +12,7 @@ const TeamPlayer = (props) => {
         <h5>Total budget:${total} </h5>
       </div>
       <div>
-            <SpecialPlayer player={player} ></SpecialPlayer>
+        <SpecialPlayer player={player}></SpecialPlayer>
       </div>
     </div>
   );

@@ -3,7 +3,6 @@ import "./SpecialPlayer.css";
 
 const SpecialPlayer = (props) => {
   const player = props.player;
-  console.log(player);
 
   return (
     <div>
