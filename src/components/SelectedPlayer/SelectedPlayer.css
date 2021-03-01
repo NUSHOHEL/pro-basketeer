@@ -1,0 +1,9 @@
+.count-info{
+    /* border:2px solid green; */
+    background-color:aliceblue;
+    margin:20px;
+    box-shadow:20px 20px 10px gray;
+    border-radius: 10px;
+    padding:5px;
+    font-family: 'Libre Baskerville', serif;
+}

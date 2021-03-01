@@ -1,0 +1,21 @@
+.player-container{
+    display:flex;
+    margin-top: 50px;
+}
+.random-player{
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.selected-player{
+    width:30%;
+    text-align: center;
+}
+.random-player img{
+    width:200px;
+    height:200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}

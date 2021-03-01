@@ -1,0 +1,18 @@
+.special-card{
+    display:flex;
+    /* border:1px solid red; */
+    align-items:center;
+    margin:20px 20px;
+    box-shadow:10px 10px 5px gray;
+    border-radius: 10px;
+    font-family: 'Libre Baskerville', serif;
+}
+.special-card img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.short-info{
+    margin-left: 20px;
+    text-align: left;
+}
