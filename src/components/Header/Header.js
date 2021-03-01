@@ -1,12 +1,12 @@
 import React from "react";
 import "./Header.css";
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, Nav,  } from "react-bootstrap";
 
 const Header = () => {
   return (
     <div>
       <div>
-        <container>
+        
           <Navbar className="justify-content-end bg-dark" variant="dark">
             <Nav>
               <Nav.Link href="#home">Home</Nav.Link>
@@ -14,7 +14,6 @@ const Header = () => {
               <Nav.Link href="#pricing">Pricing</Nav.Link>
             </Nav>
           </Navbar>
-        </container>
       </div>
 
       <div className="headings">

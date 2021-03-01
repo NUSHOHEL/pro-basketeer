@@ -24,7 +24,7 @@ const Body = () => {
     <div className="player-container">
       <div className="random-player">
         {player.map((player) => (
-          <Player addPlayer={addPlayer} player={player}></Player>
+          <Player addPlayer={addPlayer} player={player} key={player.id}></Player>
         ))}
       </div>
       <div className="selected-player">
