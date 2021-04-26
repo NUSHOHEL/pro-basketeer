@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { Navbar, Nav,  } from "react-bootstrap";
+import { Navbar, Nav} from "react-bootstrap";
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
           </Navbar>
       </div>
 
-      <div className="headings">
+      <div className="headings text-success">
         <h1>Make a Club of professionals</h1>
       </div>
     </div>

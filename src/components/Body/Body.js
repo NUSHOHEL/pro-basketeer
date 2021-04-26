@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { playerdata } from "../FakeData/fakedata";
 import Player from "../Player/Player";
 import TeamPlayer from "../SelectedPlayer/SelectedPlayer";
 import "./Body.css";
 
+
+
 const Body = () => {
-  const [player, setPlayer] = useState([]);
+  // eslint-disable-next-line no-unused-vars
+  const [player, setPlayer] = useState(playerdata);
   const [teamPlayer, setTeamPlayer] = useState([]);
-  useEffect(() => {
-    fetch("https://api.mocki.io/v1/30546c70")
-      .then((res) => res.json())
-      .then((data) => setPlayer(data));
-  }, []);
+
+  console.log(player)
+  
   const addPlayer = (player) => {
     if (teamPlayer.indexOf(player) === -1) {
       const newPlayer = [...teamPlayer, player];
@@ -23,7 +25,7 @@ const Body = () => {
   return (
     <div className="player-container">
       <div className="random-player">
-        {player.map((player) => (
+        {player?.map((player) => (
           <Player addPlayer={addPlayer} player={player} key={player.id}></Player>
         ))}
       </div>
