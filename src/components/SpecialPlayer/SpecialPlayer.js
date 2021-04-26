@@ -9,7 +9,7 @@ const SpecialPlayer = (props) => {
       {player.map((player) => (
         <div className="special-card">
           <div>
-            <img src={player.img} alt="" />
+            <img src={player.image} alt="" />
           </div>
           <div className="short-info">
             <h5>Name: {player.name} </h5>
